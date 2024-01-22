@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Scene fill="#752222" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane prefHeight="200" prefWidth="200">
+      <children>
+         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d1e0c" height="200.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+         <Label layoutX="76.0" layoutY="44.0" prefHeight="34.0" prefWidth="65.0" text="⚠️" textFill="#e1d037">
+            <font>
+               <Font size="51.0" />
+            </font>
+         </Label>
+         <Label layoutX="35.0" layoutY="108.0" text="You have exceeded ">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="13.0" />
+            </font>
+         </Label>
+         <Label layoutX="12.0" layoutY="128.0" text="your Commitment Warnings">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="13.0" />
+            </font>
+         </Label>
+      </children></AnchorPane>
+</Scene>

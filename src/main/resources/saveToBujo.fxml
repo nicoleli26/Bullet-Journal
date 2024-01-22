@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane prefHeight="278.0" prefWidth="370.0">
+      <children>
+         <Label layoutX="73.0" layoutY="6.0" text="Where would you like to save your file?" />
+         <Button fx:id="saveMyBullet" layoutX="105.0" layoutY="39.0" mnemonicParsing="false" text="myBulletJournal.bujo" />
+         <Label layoutX="58.0" layoutY="44.0" text="save to: " />
+         <Label layoutX="85.0" layoutY="161.0" text="Would you like to open your file?" />
+         <Button fx:id="openMyBullet" layoutX="108.0" layoutY="199.0" mnemonicParsing="false" text="myBulletJournal.bujo" />
+         <Label layoutX="66.0" layoutY="204.0" text="open:" />
+         <Button fx:id="closeSaveToBujo" layoutX="3.0" layoutY="250.0" mnemonicParsing="false" text="done" />
+      </children></AnchorPane>
+</Scene>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<Scene fx:id="sceneName" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <AnchorPane fx:id="anchor" prefHeight="819.0" prefWidth="1357.0">
+      <children>
+         <Button fx:id="addEvent" layoutX="8.0" layoutY="445.0" mnemonicParsing="false" text="Add Event">
+            <font>
+               <Font name="Bodoni 72 Book" size="13.0" />
+            </font>
+         </Button>
+         <Button fx:id="addTask" layoutX="10.0" layoutY="491.0" mnemonicParsing="false" text="Add Task">
+            <font>
+               <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+            </font></Button>
+         <TextArea fx:id="quotesAndNotes" layoutX="442.0" layoutY="474.0" prefHeight="200.0" prefWidth="343.0">
+            <font>
+               <Font name="Bodoni 72 Book" size="13.0" />
+            </font></TextArea>
+         <Label fx:id="quotesAndNotesLabel" layoutX="444.0" layoutY="447.0" text="Quotes And Notes">
+            <font>
+               <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+            </font></Label>
+         <Button fx:id="saveQuotesAndNotes" layoutX="737.0" layoutY="642.0" mnemonicParsing="false" text="Save">
+            <font>
+               <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+            </font></Button>
+         <Button fx:id="commitmentWarnings" layoutX="107.0" layoutY="445.0" mnemonicParsing="false" text="Commitment Warnings">
+            <font>
+               <Font name="Bodoni 72 Book" size="13.0" />
+            </font></Button>
+         <Button fx:id="saveAll" layoutX="274.0" layoutY="444.0" mnemonicParsing="false" text="Save All">
+            <font>
+               <Font name="Bodoni 72 Book" size="13.0" />
+            </font></Button>
+         <Button fx:id="weeklyOverview" layoutX="120.0" layoutY="490.0" mnemonicParsing="false" text="Weekly Overview">
+            <font>
+               <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+            </font></Button>
+         <GridPane gridLinesVisible="true" layoutX="24.0" layoutY="7.0" prefHeight="426.0" prefWidth="1317.0">
+           <columnConstraints>
+             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="179.0" minWidth="10.0" prefWidth="178.0" />
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="10.0" prefWidth="180.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+           </columnConstraints>
+           <rowConstraints>
+             <RowConstraints maxHeight="148.453125" minHeight="0.0" prefHeight="39.0" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="309.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+             <RowConstraints maxHeight="309.0" minHeight="10.0" prefHeight="159.0" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="330.96092224121094" minHeight="10.0" prefHeight="21.5" vgrow="SOMETIMES" />
+             <RowConstraints maxHeight="330.96092224121094" minHeight="10.0" prefHeight="151.5" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="330.96092224121094" minHeight="4.74090576171875" prefHeight="45.498809814453125" vgrow="SOMETIMES" />
+           </rowConstraints>
+            <children>
+               <Label fx:id="sundayDay" alignment="CENTER" prefHeight="33.0" prefWidth="185.0" text="SUNDAY">
+                  <font>
+                     <Font name="Bodoni 72 Oldstyle Book" size="27.0" />
+                  </font>
+               </Label>
+               <Label fx:id="sundayEventLabel" text=" EVENTS" GridPane.rowIndex="1">
+                  <font>
+                     <Font name="Bodoni 72 Book" size="17.0" />
+                  </font>
+               </Label>
+               <TextFlow fx:id="sundayEvents" prefHeight="132.0" prefWidth="220.0" GridPane.rowIndex="2" />
+               <Label fx:id="sundayTasksLabel" text=" TASKS" GridPane.rowIndex="3">
+                  <font>
+                     <Font name="Bodoni 72 Book" size="17.0" />
+                  </font>
+               </Label>
+               <TextFlow fx:id="mondayEvents" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               <Label fx:id="mondayDay" alignment="CENTER" prefHeight="33.0" prefWidth="188.0" text="MONDAY" GridPane.columnIndex="1">
+                  <font>
+                     <Font name="Bodoni 72 Oldstyle Book" size="27.0" />
+                  </font>
+               </Label>
+               <Label fx:id="mondayEventsLabel" layoutX="10.0" layoutY="81.0" text=" EVENTS" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <font>
+                     <Font name="Bodoni 72 Book" size="17.0" />
+                  </font>
+               </Label>
+               <Label fx:id="mondayTasksLabel" layoutX="10.0" layoutY="276.0" text="TASKS" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                  <font>
+                     <Font name="Bodoni 72 Book" size="17.0" />
+                  </font>
+               </Label>
+               <Label fx:id="tuesdayDay" alignment="CENTER" layoutX="266.0" layoutY="23.0" prefHeight="33.0" prefWidth="185.0" text="TUESDAY" GridPane.columnIndex="2">
+                  <font>
+                     <Font name="Bodoni 72 Oldstyle Book" size="27.0" />
+                  </font>
+               </Label>
+               <TextFlow fx:id="tuesdayEvents" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+               <Label fx:id="tuesdayEventsLabel" layoutX="266.0" layoutY="67.0" text=" EVENTS" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                  <font>
+                     <Font name="Bodoni 72 Book" size="17.0" />
+                  </font>
+               </Label>
+               <Label fx:id="tuesdayTasksLabel" layoutX="266.0" layoutY="245.0" text=" TASKS" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                  <font>
+                     <Font name="Bodoni 72 Book" size="17.0" />
+                  </font>
+               </Label>
+               <TextFlow fx:id="wednesdayEvents" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+               <Label fx:id="wednesdayDay" alignment="CENTER" layoutX="475.0" layoutY="22.0" prefHeight="33.0" prefWidth="188.0" text="WEDNESDAY" GridPane.columnIndex="3">
+                  <font>
+                     <Font name="Bodoni 72 Oldstyle Book" size="27.0" />
+                  </font>
+               </Label>
+               <Label fx:id="wednesdayEventsLabel" layoutX="475.0" layoutY="64.0" text=" EVENTS" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                  <font>
+                     <Font name="Bodoni 72 Book" size="17.0" />
+                  </font>
+               </Label>
+               <Label fx:id="wednesdayTaskLabel" layoutX="475.0" layoutY="239.0" text=" TASKS" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                  <font>
+                     <Font name="Bodoni 72 Book" size="17.0" />
+                  </font>
+               </Label>
+               <TextFlow fx:id="thursdayEvents" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+               <Label fx:id="thursdayDay" alignment="CENTER" layoutX="643.0" layoutY="24.0" prefHeight="33.0" prefWidth="176.0" text="THURSDAY" GridPane.columnIndex="4">
+                  <font>
+                     <Font name="Bodoni 72 Oldstyle Book" size="27.0" />
+                  </font>
+               </Label>
+               <Label fx:id="thursdayEventsLabel" layoutX="643.0" layoutY="68.0" text=" EVENTS" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                  <font>
+                     <Font name="Bodoni 72 Book" size="17.0" />
+                  </font>
+               </Label>
+               <Label fx:id="thursdayTaskLabel" layoutX="643.0" layoutY="246.0" text=" TASKS" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                  <font>
+                     <Font name="Bodoni 72 Book" size="17.0" />
+                  </font>
+               </Label>
+               <Label fx:id="fridayDay" alignment="CENTER" layoutX="666.0" layoutY="20.0" prefHeight="33.0" prefWidth="174.0" text="FRIDAY" GridPane.columnIndex="5">
+                  <font>
+                     <Font name="Bodoni 72 Oldstyle Book" size="27.0" />
+                  </font>
+               </Label>
+               <Label fx:id="saturdayDay" alignment="CENTER" layoutX="830.0" layoutY="20.0" prefHeight="33.0" prefWidth="187.0" text="SATURDAY" GridPane.columnIndex="6">
+                  <font>
+                     <Font name="Bodoni 72 Oldstyle Book" size="27.0" />
+                  </font>
+               </Label>
+               <TextFlow fx:id="fridayEvents" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+               <TextFlow fx:id="saturdayEvents" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+               <Label fx:id="fridayEventsLabel" layoutX="666.0" layoutY="57.0" text=" EVENTS" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                  <font>
+                     <Font name="Bodoni 72 Book" size="17.0" />
+                  </font>
+               </Label>
+               <Label fx:id="saturdayEventsLabel" layoutX="830.0" layoutY="57.0" text=" EVENTS" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                  <font>
+                     <Font name="Bodoni 72 Book" size="17.0" />
+                  </font>
+               </Label>
+               <Label fx:id="fridayTasksLabel" layoutX="666.0" layoutY="225.0" text=" TASKS" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                  <font>
+                     <Font name="Bodoni 72 Book" size="17.0" />
+                  </font>
+               </Label>
+               <Label fx:id="saturdayTasksLabel" layoutX="830.0" layoutY="225.0" text=" TASKS" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                  <font>
+                     <Font name="Bodoni 72 Book" size="17.0" />
+                  </font>
+               </Label>
+               <VBox fx:id="sundayTasks" prefHeight="168.0" prefWidth="164.0" GridPane.rowIndex="4" />
+               <VBox fx:id="mondayTasks" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               <VBox fx:id="tuesdayTasks" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+               <VBox fx:id="wednesdayTasks" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+               <VBox fx:id="thursdayTasks" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+               <VBox fx:id="fridayTasks" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+               <VBox fx:id="saturdayTasks" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+               <ProgressBar fx:id="sundayProgressBar" prefWidth="200.0" progress="0.0" GridPane.rowIndex="5" />
+               <ProgressBar fx:id="mondayProgressBar" prefWidth="200.0" progress="0.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+               <ProgressBar fx:id="tuesdayProgressBar" layoutX="174.0" layoutY="394.0" prefWidth="200.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+               <ProgressBar fx:id="wednesdayProgressBar" layoutX="10.0" layoutY="394.0" prefWidth="200.0" progress="0.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+               <ProgressBar fx:id="thursdayProgressBar" layoutX="502.0" layoutY="394.0" prefWidth="200.0" progress="0.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+               <ProgressBar fx:id="fridayProgressBar" layoutX="666.0" layoutY="394.0" prefWidth="200.0" progress="0.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+               <ProgressBar fx:id="saturdayProgressBar" layoutX="10.0" layoutY="394.0" prefWidth="200.0" progress="0.0" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            </children>
+         </GridPane>
+         <Label fx:id="chooseThemeLabel" layoutX="818.0" layoutY="457.0" text="Choose your theme!">
+            <font>
+               <Font name="Bodoni 72 Book" size="13.0" />
+            </font></Label>
+         <Button fx:id="huskyTheme" layoutX="843.0" layoutY="489.0" mnemonicParsing="false" text="Husky">
+            <font>
+               <Font name="Bodoni 72 Book" size="13.0" />
+            </font></Button>
+         <Button fx:id="lightTheme" layoutX="843.0" layoutY="525.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="52.0" text="Light">
+            <font>
+               <Font name="Bodoni 72 Book" size="13.0" />
+            </font></Button>
+         <Button fx:id="darkTheme" layoutX="843.0" layoutY="560.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="52.0" text="Dark">
+            <font>
+               <Font name="Bodoni 72 Book" size="13.0" />
+            </font></Button>
+         <TextFlow fx:id="taskQueue" layoutX="12.0" layoutY="586.0" prefHeight="203.0" prefWidth="384.0" />
+         <Label fx:id="taskQueueLabel" layoutX="14.0" layoutY="553.0" text="Task Queue">
+            <font>
+               <Font name="Bodoni 72 Oldstyle Book" size="17.0" />
+            </font>
+         </Label>
+         <HBox fx:id="urlBox" layoutX="945.0" layoutY="523.0" prefHeight="252.0" prefWidth="336.0" />
+         <Button fx:id="refreshTaskQueue" layoutX="395.0" layoutY="732.0" mnemonicParsing="false" text="Refresh task queue">
+            <font>
+               <Font name="Bodoni 72 Book" size="13.0" />
+            </font></Button>
+         <Label fx:id="urlLabel" layoutX="954.0" layoutY="507.0" text="URL">
+            <font>
+               <Font name="Bodoni 72 Book" size="13.0" />
+            </font></Label>
+         <Button fx:id="refreshProgressBars" layoutX="246.0" layoutY="490.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="136.0" text="Refresh progress bars">
+            <font>
+               <Font name="Bodoni 72 Book" size="13.0" />
+            </font>
+         </Button>
+         <ChoiceBox fx:id="backgroundChoiceBox" layoutX="817.0" layoutY="732.0" prefHeight="26.0" prefWidth="80.0" />
+         <ChoiceBox fx:id="fontChoiceBox" layoutX="724.0" layoutY="732.0" prefHeight="26.0" prefWidth="80.0" />
+         <ChoiceBox fx:id="textColorChoiceBox" layoutX="632.0" layoutY="732.0" prefHeight="26.0" prefWidth="80.0" />
+         <ChoiceBox fx:id="buttonChoiceBox" layoutX="540.0" layoutY="732.0" prefHeight="26.0" prefWidth="80.0" />
+         <Label fx:id="buttonsLabel" alignment="CENTER" layoutX="542.0" layoutY="708.0" prefHeight="17.0" prefWidth="72.0" text="Buttons">
+            <font>
+               <Font name="Bodoni 72 Book" size="13.0" />
+            </font>
+         </Label>
+         <Label fx:id="textColorLabel" alignment="CENTER" layoutX="633.0" layoutY="708.0" prefHeight="17.0" prefWidth="75.0" text="Text Color">
+            <font>
+               <Font name="Bodoni 72 Book" size="13.0" />
+            </font>
+         </Label>
+         <Label fx:id="fontLabel" alignment="CENTER" layoutX="725.0" layoutY="708.0" prefHeight="17.0" prefWidth="76.0" text="Font (enot)">
+            <font>
+               <Font name="Bodoni 72 Book" size="13.0" />
+            </font>
+         </Label>
+         <Label fx:id="backgroundLabel" alignment="CENTER" layoutX="817.0" layoutY="708.0" prefHeight="17.0" prefWidth="79.0" text="Background">
+            <font>
+               <Font name="Bodoni 72 Book" size="13.0" />
+            </font>
+         </Label>
+      </children></AnchorPane>
+</Scene>
